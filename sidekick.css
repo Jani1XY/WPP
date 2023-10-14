@@ -10,7 +10,9 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(./img/darkCity.jpg);
-    background-size: 100%;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: repeat-y;
     grid-template-rows: 1fr 8fr 1fr;
 }
 #container img{
@@ -36,7 +38,7 @@ main{
     display: inline-grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 7fr 3fr;
-    grid-gap: 1em;
+    grid-gap: 2em;
     justify-items: center;
     height: 100%;
     width: 100%;
@@ -45,7 +47,7 @@ main{
 }
 main a{
     display: grid;
-    
+    margin-bottom: 2em;
 
 }
 main button{
@@ -61,11 +63,17 @@ main button{
 
 }
 footer{
-    background-color: rgba(34, 34, 34, 0.9);
+    background-color: rgb(34, 34, 34);
     height: 100%;
     width: 100%;
     color: white;
     grid-row: 3;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+footer p{
+    font-size: 350%;
 }
 
 
