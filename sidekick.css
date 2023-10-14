@@ -1,7 +1,7 @@
 body{
     color: white;
-    height: 1000px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0px;
     font-family: Inter;
 }
@@ -10,7 +10,11 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(./img/darkCity.jpg);
+    background-size: 100%;
     grid-template-rows: 1fr 8fr 1fr;
+}
+#container img{
+    max-width: 100%;
 }
 header{
     display: flex;
@@ -28,24 +32,36 @@ header p{
     padding-left: 5%;
     margin: 0px;
 }
-main button{
-    padding: 2em;
-    border-radius: 20px;
-}
-.gtul:hover{
-    background-color: rgb(30, 33, 206);
-
-}
 main{
-    display: grid;
-    grid-template-columns: 2 1 1 1 1 1 2;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 7fr 3fr;
+    grid-gap: 1em;
+    justify-items: center;
     height: 100%;
     width: 100%;
     color: white;
     grid-row: 2;
 }
+main a{
+    display: grid;
+    
+
+}
+main button{
+    padding: 1em;
+    border-radius: 20px;
+    border: none;
+}
+.gtul img{
+    max-height: 100%;
+}
+.gtul:hover{
+    background-color: rgb(30, 33, 206);
+
+}
 footer{
-    background-color: rgb(43, 41, 56);
+    background-color: rgba(34, 34, 34, 0.9);
     height: 100%;
     width: 100%;
     color: white;
