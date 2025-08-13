@@ -1,0 +1,16 @@
+body{
+    color: pink;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    font-family: Inter;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../static/img/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

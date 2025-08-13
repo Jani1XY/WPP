@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='/img/favicon.ico') }}">
+    <script src="{{ url_for('static', path='/js.js') }}"></script>
+    <title>Hare's Home</title>
+</head>
+<body onload="getWiki()">
+<div id="container">
+
+    <header>
+        <p>
+            <b>Hello Jani!</b>
+        </p>
+    </header>
+    <main>
+        <div id="bannerDiv" style="visibility: hidden;">
+            <button onclick="getWiki()">press</button>
+        </div>
+
+        <!-- <form action="https://www.duckduckgo.com/search" method="get" autocomplete="off">
+            <input type="text" name="q" placeholder="search" autofocus>
+            <input type="submit" value="Keresés">
+        </form> -->
+
+        <!-- Have AI chatbot ready to go, because that's cooler -->
+    </main>
+    <footer>
+        <p>
+            <i>Footer</i>
+        </p>
+    </footer>
+</div>
+</body>
+</html>
