@@ -25,10 +25,7 @@ header {
     align-items: center;
     grid-row: 1;
 }
-header p {
-    padding-left: 5%;
-    margin: 0px;
-}
+
 main {
     justify-items: center;
     height: 60%;
@@ -43,8 +40,7 @@ nav {
     height: 20%;
     width: 100%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -52,7 +48,6 @@ nav {
     background-color: rgba(240, 248, 255, 0.85);
     min-height: 1em;
     min-width: 1em;
-    margin: 1em;
     transform: skew(-10deg);
     border-radius: 5px;
 }
@@ -60,4 +55,15 @@ nav {
 .navbar {
     height: 4em;
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 3em;
+}
+
+.playerCorner {
+    background-color: rgb(21, 52, 83);
+    width: 20%;
+    height: 70%;
+    transform: skew(-10deg) translateX(-20px);
 }
