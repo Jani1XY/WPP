@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/fonts/NotoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 700;
+}
+
 body {
     color: pink;
     height: 100vh;
     width: 100vw;
     margin: 0px;
-    font-family: Inter;
+    font-family: 'Noto Sans';
 }
 #container {
     height: 100vh;
@@ -46,24 +54,81 @@ nav {
 
 .palalelogram {
     background-color: rgba(240, 248, 255, 0.85);
-    min-height: 1em;
-    min-width: 1em;
     transform: skew(-10deg);
     border-radius: 5px;
 }
 
 .navbar {
-    height: 4em;
+    height: 4rem;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 3em;
+    margin-bottom: 2rem;
 }
 
 .playerCorner {
+    display: flex;
     background-color: rgb(21, 52, 83);
-    width: 20%;
-    height: 70%;
+    width: 25%;
+    height: 60%;
     transform: skew(-10deg) translateX(-20px);
+}
+
+.playerCorner p {
+    margin: 0px;
+
+}
+
+.lvlNumber {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    justify-content: center;
+    gap: 0px;
+    line-height: 1;
+    align-items: center;
+}
+
+.playerXp {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.xpBar {
+    transform: skew(10deg);
+    height: 5%;
+    width: 100%;
+    border: 0px;
+    background-color: rgb(28, 69, 109);
+}
+/* 
+.xpBar::-webkit-progress-bar {
+    background-color: rgb(28, 69, 109);
+}
+
+.xpBar::-webkit-progress-value {
+    background-color: rgb(55,178,206);
+}
+
+.xpBar::-moz-progress-bar {
+    background-color: rgb(55,178,206);
+} */
+
+.xpBar::-moz-progress-bar {
+    background-color: rgb(204, 206, 55);
+}
+
+.xpNumber {
+    padding-left: 3%;
+}
+
+.playerName {
+    transform: skew(10deg);
+    padding-bottom: 1%;
 }
